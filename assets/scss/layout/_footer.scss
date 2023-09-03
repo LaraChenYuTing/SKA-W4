@@ -1,4 +1,78 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+footer {
+  background: $primary;
+  color: #FFFFFF;
+
+
+  .footer {
+    padding: 48px 312px 32px;
+
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+
+      .navbar-nav {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+
+        @media (max-width: 768px) {
+          flex-wrap: wrap;
+        }
+
+        .navbar-item {
+          font: normal normal normal 20px/30px Source Han Sans TW;
+          color: #FFFFFF;
+
+          .navbar-link {
+            height: 100%;
+            display: block;
+            font-size: 16px;
+            color: #ffffff;
+            text-decoration: none;
+            //padding: 8px 32px;
+          }
+        }
+      }
+
+      .social {
+        display: flex;
+        gap: 32px;
+
+        img {
+          max-width: 48px;
+        }
+      }
+    }
+
+    .info {
+      font-size: 36px;
+    }
+
+    .line {
+      border: 1px solid #ffffff;
+      margin-top: 32px;
+    }
+    .copyright{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 32px;
+      .desc{
+        display: flex;
+        gap:48px ;
+        a{
+          color: #ffffff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
+
+.navbar-link:hover {
+  opacity: 0.7;
+}
+
+.navbar-item:last-child .navbar-link {
+  padding-right: 0;
+} 
